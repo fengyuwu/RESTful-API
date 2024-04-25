@@ -30,7 +30,7 @@ Testing
 5. On the Getter Started menu, Select Clone a repository
 6. Paste the URL to the repository location input box
 7. Select a desired path and hit Clone Button
-8. Once the project is loaded, click play button and test the following endpoint in the Local host or download Postman software and enter the following endpoint using GET. Then send the request to see the response.
+8. Once the project is loaded, click play button and test the following endpoint in the browser or download Postman software and enter the following endpoint using GET， Then send the request to verify the response.
 
 or you can follow these steps:
 1. Visit https://github.com/fengyuwu/RESTful-API
@@ -38,7 +38,7 @@ or you can follow these steps:
 3. Click Download Zip
 4. Extract the downloaded zip
 5. Open the RestfulAPI.sln
-6. Once the project is loaded, click the play button and test the following endpoint in the Local host or download Postman software and enter the following endpoint using GET. Then send the request to see the response.
+6. Once the project is loaded, click the play button and test the following endpoint in the browser or download Postman software and enter the following endpoint using GET， Then send the request to verify the response.
 
 
 Notes: Endpoints can be tested using Postman or a localhost server when running the project in Visual Studio 2022
