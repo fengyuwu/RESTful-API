@@ -107,4 +107,6 @@ Test cases are added to check for the correctness of the program. More test case
 
 Error scenarios are handled, 500 internal server errors will be returned if there is an exception for now due to the small size of the project and limited time. In a more complex system. I would have a different http code for different situations, like FILE not found, or bad input for the request. All situation will have different status  code  so that when developing, it can let developer know what to chase after.
 
+When calculating the total number of orders and amount spent at task 2, only the customer id is returned. The name can also be returned but it will be slower due to another join and customer id is enouch to identify the person. 
+
 
