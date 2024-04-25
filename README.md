@@ -91,3 +91,5 @@ DI was used to create a loosely coupled program so that testing and maintaining 
 
 Separated logic from the Controller and making logic as a service can make code more maintainable.
 
+Unit tests in a separate project (https://github.com/fengyuwu/RestAPI/blob/main/DataServiceTests.cs) if the tests need to be removed when the software is shipped)so that when the software is shipped, test can still stay.
+
