@@ -89,7 +89,7 @@ LINQ instead of Entity Framework because the datasets are small, for more comple
 
 MVC framework is used because it can achieve Separation of concerns and Routing allows me to define custom routes for API endpoints
 
-Dependency Injection was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required.
+Dependency Injection was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required. Data operating functionality is written as a service(DataService) so that if other classes need it, it can pass it as a dependency. 
 
 Separated logic from the Controller and making logic as a service can make code more maintainable.
 
