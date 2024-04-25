@@ -18,7 +18,21 @@ Necessary Dependencies
 Getting Started
 ---------------
 
-This project implemented a.NET API that exposes endpoints to retrieve and manipulate data from various sources. The API will read and merge data, calculate aggregations, and return summarized information in JSON format.  To test the Apis, clone the whole repo, unzip, and open it in Visual Studio.
+This project implemented a.NET API that exposes endpoints to retrieve and manipulate data from various sources. The API will read and merge data, calculate aggregations, and return summarized information in JSON format.  
+
+Testing
+---------------
+1. Visit https://github.com/fengyuwu/RESTful-API
+2. Locate  and click the <>Code button on the top right section
+3. Navigate to the HTTP tab, and copy URL to clipboard
+4. Open Visual Studio 2022 (install .Net 6.0 first)
+5. On the Getter Started menu, Select Clone a repository
+6. Paste the URL to the repository location input box
+7. Select a desired path and hit Clone Button
+8. Once the project is loaded, click play button and test the following end point in Local host or postman software.
+
+
+, unzip, and open it in Visual Studio.
 Endpoints can be tested using Postman or localhost server when running the project in Visual Studio 2022
 
 
