@@ -85,4 +85,9 @@ Approach and Design Choices:
 
 LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to aceess the DB, saving development time.
 
+MVC framework is used because it can achieve Separation of concerns and Routing allows me to define custom routes for API endpoints
+
+DI was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required.
+
+Separated logic from the Controller and making logic as a service can make code more maintainable.
 
