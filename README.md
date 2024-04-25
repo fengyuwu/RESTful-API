@@ -105,6 +105,6 @@ the try-catch block is implemented to handle the exception
 
 Test cases are added to check for the correctness of the program. More test cases should be developed for edge cases like empty CSV files. Since the project only has small amount of dataset, only some tests are written to ensure the correctness of the program.
 
-Error scenarios are handled, 500 internal server error will be return if there is an exception. In a more complex system. I would have a different http code for different situations, like FILE not found, or bad input for the request. All situation will have different status  code  so that when developing, it can let developer know what to chase after.
+Error scenarios are handled, 500 internal server errors will be returned if there is an exception for now due to the small size of the project and limited time. In a more complex system. I would have a different http code for different situations, like FILE not found, or bad input for the request. All situation will have different status  code  so that when developing, it can let developer know what to chase after.
 
 
