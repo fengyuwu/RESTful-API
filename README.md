@@ -32,7 +32,7 @@ Testing
 8. Once the project is loaded, click play button and test the following end point in Local host or postman software.
 
 
-, unzip, and open it in Visual Studio.
+
 Endpoints can be tested using Postman or localhost server when running the project in Visual Studio 2022
 
 
