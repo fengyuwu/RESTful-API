@@ -83,13 +83,26 @@ Note: Ensure the CSV and JSON files are not opened by other programs when runnin
 
 Approach and Design Choices:
 
-LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to aceess the DB, saving development time.
+Additional API endpoints are exposed for demonstration purposes, They will be removed when the product is ready to ship for security reason.
+
+LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to access the DB, saving development time.
 
 MVC framework is used because it can achieve Separation of concerns and Routing allows me to define custom routes for API endpoints
 
-DI was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required.
+Dependency Injection was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required.
 
 Separated logic from the Controller and making logic as a service can make code more maintainable.
 
-Unit tests in a separate project (https://github.com/fengyuwu/RestAPI/blob/main/DataServiceTests.cs) if the tests need to be removed when the software is shipped)so that when the software is shipped, test can still stay.
+Unit tests are housed in a separate project t (https://github.com/fengyuwu/RestAPI/blob/main/DataServiceTests.cs) to ensure their preservation even after the software is shipped, 
+
+Solid principle is followed so that the class only has one responsibility. This makes it easy to maintain and understand. 
+
+Comment and #region-#endregion are added for readability  
+
+Class and var naming convention is followed to meet coding standards
+
+the try-catch block is implemented to handle the exception
+
+Test cases are added to check for the correctness of the program. More test cases should be developed for edge cases like empty CSV files. Since the project only has small amount of dataset, only some tests are written to ensure the correctness of the program.
+
 
