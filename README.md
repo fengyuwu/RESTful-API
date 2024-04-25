@@ -109,4 +109,6 @@ Error scenarios are handled, 500 internal server errors will be returned if ther
 
 When calculating the total number of orders and amount spent at task 2, only the customer id is returned. The name can also be returned but it will be slower due to another join and customer id is enouch to identify the person. 
 
+Service are breakdown into different microservice, so that developer can work on different services at the same time, this approach of breaking down service into smaller ones can speed up dev process and make code easy to read instead of having a big service.
+
 
