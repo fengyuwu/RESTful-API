@@ -83,32 +83,37 @@ Note: Ensure the CSV and JSON files are not opened by other programs when runnin
 
 Approach and Design Choices:
 ---------------
-Additional API endpoints are exposed for demonstration purposes, They will be removed when the product is ready to ship for security reason.
 
-LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to access the DB, saving development time.
+To demonstrate functionality, additional API endpoints are exposed for demonstration purposes, whey will be removed when the product is ready to ship for security reasons.
 
-MVC framework is used because it can achieve Separation of concerns and Routing allows me to define custom routes for API endpoints
+LINQ is chosen over Entity Framework for its efficiency with small datasets. However, for larger projects, Entity Framework would be preferable due to its object-based database access, saving development time.
 
-Dependency Injection was used to create a loosely coupled program so that testing and maintaining would be easy to do. Less rewrite is required. Data operating functionality is written as a service(DataService) so that if other classes need it, it can pass it as a dependency. 
+The MVC framework is employed to achieve Separation of Concerns, and custom routing allows for defining specific routes for API endpoints.
 
-Separated logic from the Controller and making logic as a service can make code more maintainable.
+Dependency Injection is utilized to create a loosely coupled program, facilitating testing and maintenance. Data functionality is encapsulated within a service (DataService) to allow for easy dependency injection into other classes.
 
-Unit tests are housed in a separate project t (https://github.com/fengyuwu/RestAPI/blob/main/DataServiceTests.cs) to ensure their preservation even after the software is shipped, 
+Separating logic from controllers and encapsulating logic within services enhances code maintainability.
 
-Solid principle is followed so that the class only has one responsibility. This makes it easy to maintain and understand. 
+Unit tests are housed in a separate project (https://github.com/fengyuwu/RestAPI/blob/main/DataServiceTests.cs) to ensure their preservation even after the software is shipped, 
 
-Comment and #region-#endregion are added for readability  
+SOLID principle is followed ensuring each class has a single responsibility. This makes it code easy to maintenance and understand.
 
-Class and var naming convention is followed to meet coding standards
+Comment and #region-#endregion section are added for readability  
 
-the try-catch block is implemented to handle the exception
+Naming conventions are followed to meet coding standards.
 
-Test cases are added to check for the correctness of the program. More test cases should be developed for edge cases like empty CSV files. Since the project only has small amount of dataset, only some tests are written to ensure the correctness of the program.
+Exception handling is implemented using try-catch blocks.
 
-Error scenarios are handled, 500 internal server errors will be returned if there is an exception for now due to the small size of the project and limited time. In a more complex system. I would have a different http code for different situations, like FILE not found, or bad input for the request. All situation will have different status  code  so that when developing, it can let developer know what to chase after.
+Test cases are included to verify program correctness, with a recommendation for additional tests for edge cases such as empty CSV files and malformed files.
 
-When calculating the total number of orders and amount spent at task 2, only the customer id is returned. The name can also be returned but it will be slower due to another join and customer id is enouch to identify the person. 
+Error scenarios are handled, HTTP status code 500 internal server errors will be returned if there is an exception. In a more complex system, I would have different status codes for different situations(Success response, not found, and service unavailable, etc) so that the developer can easily pinpoint issues and it also helps with user experience. 
 
-Service are breakdown into different microservice, so that developer can work on different services at the same time, this approach of breaking down service into smaller ones can speed up dev process and make code easy to read instead of having a big service.
+
+When calculating total orders and amounts spent in task 2, only customer IDs are returned for efficiency, though returning names is feasible albeit slower due to additional join operations.
+
+Functionalities are broken down into small services for readability and concurrent development in a team setting.
+
+.Net 6.0 is selected because it is a long-term support version.
+
 
 
