@@ -25,21 +25,32 @@ Endpoints can be tested using Postman or localhost server when running the proje
 Task 1 and Task 3 Endpoints:
 
 https://localhost:7214/top-customers
+
 https://localhost:7214/product-summary
+
 https://localhost:7214/customer-summary
+
 https://localhost:7214/customers
+
 https://localhost:7214/orders
+
 https://localhost:7214/products
+
 https://localhost:7214/order-items
 
 
 
 Endpoint exposed to demonstrate the correctness for task 2 only(To be deleted after demo):
 https://localhost:7214/demo2-1
+
 https://localhost:7214/demo2-2
+
 https://localhost:7214/demo2-3
+
 https://localhost:7214/demo2-4
+
 https://localhost:7214/demo2-5
+
 https://localhost:7214/demo2-6
 
 
