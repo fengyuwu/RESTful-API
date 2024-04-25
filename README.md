@@ -104,7 +104,7 @@ Exception handling is implemented using try-catch blocks.
 
 Test cases are included to verify program correctness, with a recommendation for additional tests for edge cases such as empty CSV files and malformed files.
 
-Error scenarios are handled, HTTP status code 500 internal server errors will be returned if there is an exception. In a more complex system, I would have different status codes for different situations(Success response, not found, service unavailable, etc) so that the developer can easily pinpoint issues and it also helps with user experience. 
+Error scenarios are handled, HTTP status code 500 internal server errors will be returned if there is an exception. In a more complex system, I would have different status codes to indicate the success or failure of API requests for different situations(Success response, not found, service unavailable, etc) so that the developer can easily pinpoint issues and it also helps with user experience. 
 
 When calculating total orders and amounts spent in task 2, only customer IDs are returned for efficiency, though returning names is feasible albeit slower due to additional join operations.
 
