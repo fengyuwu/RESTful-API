@@ -81,4 +81,8 @@ https://localhost:7214/demo2-6
 Note: Ensure the CSV and JSON files are not opened by other programs when running the web app.
 
 
- 
+Approach and Design Choices:
+
+LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to aceess the DB, saving development time.
+
+
