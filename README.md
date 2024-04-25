@@ -82,7 +82,7 @@ Note: Ensure the CSV and JSON files are not opened by other programs when runnin
 
 
 Approach and Design Choices:
-
+---------------
 Additional API endpoints are exposed for demonstration purposes, They will be removed when the product is ready to ship for security reason.
 
 LINQ instead of Entity Framework because the datasets are small, for more complex projects, I would use EF because it allows us to use objects to access the DB, saving development time.
